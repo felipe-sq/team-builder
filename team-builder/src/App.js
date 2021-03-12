@@ -17,7 +17,7 @@ function App() {
   const [formValues, setForms] = useState(initialFormValues)
 
   const updateForm = (inputName, inputValue) => {
-    setForms([...formValues, [inputName]: inputValue])
+    setForms({...formValues, [inputName]: inputValue})
   }
 
 const submitForm = () => {

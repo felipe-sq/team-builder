@@ -14,7 +14,7 @@ export default function Form(props) {
     }
 
     return (
-        <form onSubmit={onSubmit}>
+        <form className='container' onSubmit={onSubmit}>
             <div className='form-group inputs'>
                 <label>Name
                     <input
@@ -39,6 +39,7 @@ export default function Form(props) {
 
                 <label>Role
                     <select name="role" onChange={onChange} value={values.role}>
+                        <option>Select Your Role!</option>
                         <option>Backend Engineer</option> 
                         <option>Frontend Engineer</option>
                         <option>UX/UI Designer</option>
